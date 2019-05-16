@@ -1,1 +1,1 @@
-# jamFinder
+# JamFinder

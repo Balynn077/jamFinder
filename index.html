@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>JamFinder</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    
+        <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body class="white-text grey lighten-5">
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper ">
+               <img style="cursor:pointer; text-align:center; width:18%; margin-left:10px;" class=" brand-logo left  responsive-img" src="./assets/images/jamlogo2.png" alt="" onclick="location.reload()">
+                </div>
+            </nav>
+        </div>
+    </header>
+<!--  -->
+<div class="helpDiv right">
+    <div>
+        <a id="menu" class="pulse waves-effect waves-light btn btn-floating" onclick="$('.tap-target').tapTarget('open')" ><i class="material-icons">help
+            </i></a>
+    </div>
+    <!-- Tap Target Structure -->
+    <div class="tap-target teal darken-2" data-target="menu">
+    <div class="tap-target-content ">
+        <h5>What is Jam Finder anyway??</h5>
+        <p>Jam finder is the perfect app for finding last minute shows in your area in YOUR price range! </p>
+        <p>Jam Finder allows music-lovers to quickly and easily find new music in their area. Jam Finder gives users the ability to discover bands </p>
+    </div>
+    </div>
+</div>
+<div class="begin card z-depth-2">
+            <div class="card-title"></div>
+            <h1 class="allowPls black-text">Please allow your location to continue! <i class="material-icons small">insert_emoticon</i></h1>
+            <div class="preloader-wrapper big active">
+                    <div class="spinner-layer spinner-blue">
+                      <div class="circle-clipper left">
+                        <div class="circle"></div>
+                      </div><div class="gap-patch">
+                        <div class="circle"></div>
+                      </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+              
+                    <div class="spinner-layer spinner-red">
+                      <div class="circle-clipper left">
+                        <div class="circle"></div>
+                      </div><div class="gap-patch">
+                        <div class="circle"></div>
+                      </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+              
+                    <div class="spinner-layer spinner-yellow">
+                      <div class="circle-clipper left">
+                        <div class="circle"></div>
+                      </div><div class="gap-patch">
+                        <div class="circle"></div>
+                      </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+              
+                    <div class="spinner-layer spinner-green">
+                      <div class="circle-clipper left">
+                        <div class="circle"></div>
+                      </div><div class="gap-patch">
+                        <div class="circle"></div>
+                      </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+                  </div>
+</div>
+    <!-- container -->
+    <div class="container">
+            <!-- Tap Target Structure -->
+        <!-- ADDED LOADING SPINNER -->
+        
+
+        <!-- ================ -->
+        <br>
+        <!-- <div class="row white-text flow-text" id ="mainForm"> -->
+            <form class="row mainDiv z-depth-2 center-align blue-grey lighten-5" name="jam" method="post" id="mainForm">
+                <div class="dropOpt input-field col s12 l4 teal z-depth-2">
+                        <select name="dateSelect" id="dateSelect">
+                            <option style="font-variant: all-petite-caps" value="" disabled selected>Dates</option>
+                            <option value="Today">Today</option>
+                            <option value="Tomorrow">Tomorrow</option>
+                            <option value="This Weekend">This Weekend</option>
+                            <option value="This Month">This Month</option>
+                            <option value="Next Month">Next Month</option>
+                        </select>
+                </div>
+                <div class="dropOpt input-field col s12 l4 teal z-depth-2">
+                    <select name="genreSelect" id="genreSelect">
+                        <option value="" disabled selected>Genres</option>
+                        <option value="Alternative">Alternative</option>
+                        <option value="Blues">Blues</option>
+                        <option value="Classic Rock">Classic Rock</option>
+                        <option value="Classical">Classical</option>
+                        <option value="Country">Country</option>
+                        <option value="Electronic">Electronic</option>
+                        <option value="Folk">Folk</option>
+                        <option value="Funk">Funk</option>
+                        <option value="Hard Rock">Hard Rock</option>
+                        <option value="Hip Hop">Hip Hop</option>
+                        <option value="Indie">Indie</option>
+                        <option value="Jazz">Jazz</option>
+                        <option value="Latin">Latin</option>
+                        <option value="Pop">Pop</option>
+                        <option value="Punk">Punk</option>
+                        <option value="Rap">Rap</option>
+                        <option value="Reggae">Reggae</option>
+                        <option value="RnB">RnB</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Soul">Soul</option>
+                        <option value="Techno">Techno</option>
+                    </select>
+                </div>
+                <div class="dropOpt input-field col s12 l4 teal z-depth-2">
+                    <select name="priceSelect" id="priceSelect">
+                        <option value="" disabled selected>Price Ranges</option>
+                        <option value="10">Less than $10</option>
+                        <option value="50">Less than $50</option>
+                        <option value="100">Less than $100</option>
+                        <option value="100000">Any Price</option>
+                    </select>
+                </div>  
+      <div class=" divider"></div>
+               <div class="center-align">
+                    <div class="row btnROw center-align">
+                        <button class="center-align dropOpt btn waves-effect waves-light btn-large" type="submit" value="submit" name="jamForm" id="jamBtn">Jam On
+                            <i class="material-icons left">music_note</i>
+                        </button>
+                    </span>
+                    </div>
+                </div>
+            </form>
+        <!-- </div> -->
+
+        <div id="player" class="responsive-video">
+          
+        </div>
+
+        <br>
+
+        <div class="mainDiv z-depth-2 row blue-grey lighten-5 teal-text text-darken-3" id="resultsDiv">
+            <div class="">
+                <h4 class="results align-center">Results</h1>
+            </div>
+            <div class="row tableRow">
+                <table class="bordered striped centered highlight responsive-table">
+                    <thead>
+                        <tr class="hide-on-small-only">
+                        <th class="tbhead" id="location">Location</th>
+                        <th class="tbhead" id="date">Date</th>
+                        <th class="tbhead" id="Time">Time</th>
+                        <th  class="tbhead" id="bandName">Band/Artist Name</th>
+                        <th class="tbhead" id="price">Item Price</th>
+                        <th class="tbhead" id="YouTube">Youtube Vid</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>  
+            
+            <div class="row center-align">
+                <button class="btn btn-large" onclick="tryAgain()"><a href="#mainDiv"></a>Try Again!</button>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+
+
+
+          
+    <!-- CONTAINER WRAPPER -->
+
+<div id="randImg"> </div>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <!-- alert system -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- materialze js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script type="text/javascript" src="assets/javascript/seatgeek.js"></script>
+
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+</body>
+
+</html>
